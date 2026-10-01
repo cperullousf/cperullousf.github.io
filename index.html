@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f1e9" />
+    <meta name="description" content="A considered field guide to the landscapes, cities, and ancient paths of Peru." />
+    <title>Peru, in every direction | Fieldnotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Fieldnotes Peru home">
+        <span class="wordmark-mark" aria-hidden="true">F.</span>
+        <span>FIELDNOTES <small>PERU</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#destinations">Places</a>
+        <a href="#route">The route</a>
+        <a href="#field-guide">Field guide</a>
+      </nav>
+      <a class="header-link" href="#route">Plan a journey <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Machu Picchu rising above a green mountain ridge"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light-eyebrow"><span></span> 13°09' S &nbsp; 72°32' W</p>
+          <h1 id="hero-title">Peru, in<br />every direction.</h1>
+          <p class="hero-copy">High paths, deep time, and a thousand ways to feel small in the best possible way.</p>
+          <a class="hero-cta" href="#destinations">Find your somewhere <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span>01 / 06</span><span>THE ANDES, ABOVE THE CLOUDS</span></div>
+        <div class="hero-side-note">A FIELD GUIDE TO PERU</div>
+      </section>
+
+      <section class="intro-strip" id="field-guide">
+        <p class="eyebrow">A country of many worlds</p>
+        <p class="intro-text">From the Pacific edge to the Amazon basin, Peru rewards the curious. Start with a place. Let the place set the pace.</p>
+        <div class="intro-stat"><strong>3</strong><span>distinct<br />landscapes</span></div>
+        <div class="intro-stat"><strong>5,000+</strong><span>years of<br />living history</span></div>
+      </section>
+
+      <section class="destinations section-wrap" id="destinations" aria-labelledby="destinations-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Choose a direction</p>
+            <h2 id="destinations-title">Places that stay with you.</h2>
+          </div>
+          <p class="section-aside">Six starting points.<br />No wrong turn.</p>
+        </div>
+
+        <div class="discovery-tools">
+          <div class="filters" role="group" aria-label="Filter destinations by region">
+            <button class="filter-button is-active" type="button" data-region="all" aria-pressed="true">All places <span>06</span></button>
+            <button class="filter-button" type="button" data-region="andes" aria-pressed="false">Andes</button>
+            <button class="filter-button" type="button" data-region="coast" aria-pressed="false">Coast</button>
+            <button class="filter-button" type="button" data-region="amazon" aria-pressed="false">Amazon</button>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Search destinations</span>
+            <input id="destination-search" type="search" placeholder="Search a place" autocomplete="off" />
+          </label>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite">Showing 6 places</p>
+        <div class="destination-grid" id="destination-grid">
+          <article class="destination-card" data-region="andes" data-name="machu picchu inca trail">
+            <a class="destination-image image-machu" href="#route" aria-label="Explore Machu Picchu and the Inca Trail"><span class="image-index">01</span></a>
+            <div class="card-meta"><span>THE ANDES</span><span>2,430 M</span></div>
+            <div class="card-title-row"><h3>Machu Picchu</h3><button class="save-button" type="button" aria-label="Save Machu Picchu" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">A citadel in the clouds, best met before the day-trippers arrive.</p>
+            <p class="card-detail">Sacred Valley <span>·</span> 2–3 days</p>
+          </article>
+          <article class="destination-card" data-region="andes" data-name="cusco city plaza history">
+            <a class="destination-image image-cusco" href="#route" aria-label="Explore the streets of Cusco"><span class="image-index">02</span></a>
+            <div class="card-meta"><span>THE ANDES</span><span>3,399 M</span></div>
+            <div class="card-title-row"><h3>Cusco</h3><button class="save-button" type="button" aria-label="Save Cusco" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">Inca stonework, Spanish facades, and a city that holds both.</p>
+            <p class="card-detail">Cusco Region <span>·</span> 2 days</p>
+          </article>
+          <article class="destination-card" data-region="andes" data-name="sacred valley ollantaytambo pisac">
+            <a class="destination-image image-valley" href="#route" aria-label="Explore the Sacred Valley"><span class="image-index">03</span></a>
+            <div class="card-meta"><span>THE ANDES</span><span>2,800 M</span></div>
+            <div class="card-title-row"><h3>Sacred Valley</h3><button class="save-button" type="button" aria-label="Save Sacred Valley" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">Terraced hillsides and market towns threaded by the Urubamba.</p>
+            <p class="card-detail">Cusco Region <span>·</span> 2–4 days</p>
+          </article>
+          <article class="destination-card" data-region="coast" data-name="arequipa colca canyon white city">
+            <a class="destination-image image-arequipa" href="#route" aria-label="Explore Arequipa and Colca Canyon"><span class="image-index">04</span></a>
+            <div class="card-meta"><span>THE SOUTH</span><span>2,335 M</span></div>
+            <div class="card-title-row"><h3>Arequipa</h3><button class="save-button" type="button" aria-label="Save Arequipa" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">Volcanic stone glows white at dusk beneath three watchful peaks.</p>
+            <p class="card-detail">Arequipa Region <span>·</span> 2–3 days</p>
+          </article>
+          <article class="destination-card" data-region="andes" data-name="lake titicaca puno islands">
+            <a class="destination-image image-titicaca" href="#route" aria-label="Explore Lake Titicaca"><span class="image-index">05</span></a>
+            <div class="card-meta"><span>THE ALTIPLANO</span><span>3,812 M</span></div>
+            <div class="card-title-row"><h3>Lake Titicaca</h3><button class="save-button" type="button" aria-label="Save Lake Titicaca" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">An immense blue horizon shared by islands and old traditions.</p>
+            <p class="card-detail">Puno Region <span>·</span> 2 days</p>
+          </article>
+          <article class="destination-card" data-region="amazon" data-name="amazon rainforest tambopata wildlife">
+            <a class="destination-image image-amazon" href="#route" aria-label="Explore the Peruvian Amazon"><span class="image-index">06</span></a>
+            <div class="card-meta"><span>THE AMAZON</span><span>200 M</span></div>
+            <div class="card-title-row"><h3>Tambopata</h3><button class="save-button" type="button" aria-label="Save Tambopata" aria-pressed="false"><span aria-hidden="true">+</span></button></div>
+            <p class="card-description">Dawn on the river, macaws overhead, forest in every direction.</p>
+            <p class="card-detail">Madre de Dios <span>·</span> 3–4 days</p>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No places match that search. Try another name or region.</p>
+      </section>
+
+      <section class="route-band" id="route" aria-labelledby="route-title">
+        <div class="route-photo" role="img" aria-label="Mountain valley and a winding trail in the Andes"></div>
+        <div class="route-copy">
+          <p class="eyebrow light-eyebrow"><span></span> A first journey</p>
+          <h2 id="route-title">Take the long way<br />to the clouds.</h2>
+          <p>Give the altitude time to become familiar. This seven-day loop lets the Sacred Valley lead you gently toward Machu Picchu.</p>
+          <a class="route-link" href="#itinerary">See the 7-day route <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="route-number">7 <small>DAYS</small></div>
+      </section>
+
+      <section class="itinerary section-wrap" id="itinerary" aria-label="Seven-day itinerary">
+        <div class="itinerary-heading"><p class="eyebrow">A little room to breathe</p><p>Go slowly. The mountains aren’t going anywhere.</p></div>
+        <div class="itinerary-days">
+          <div><span>01—02</span><strong>Cusco</strong><small>Arrive, rest, wander</small></div>
+          <div><span>03—04</span><strong>Sacred Valley</strong><small>Pisac to Ollantaytambo</small></div>
+          <div><span>05—06</span><strong>Machu Picchu</strong><small>Train in, walk early</small></div>
+          <div><span>07</span><strong>Back to Cusco</strong><small>One last slow morning</small></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-mark" href="#home"><span class="wordmark-mark" aria-hidden="true">F.</span><span>FIELDNOTES <small>PERU</small></span></a>
+      <p>Made for the ones who take the scenic route.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
